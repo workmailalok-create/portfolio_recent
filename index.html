@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Alok Mishra - Agentic AI Specialist & Salesforce Certified Agentforce Architect">
+    <title>Alok Mishra | Agentic AI & Data Architect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            /* Color Palette */
+            --primary: #00A1E0;       /* Salesforce Blue */
+            --secondary: #032D60;     /* Deep Navy */
+            --gcp-blue: #4285F4;      /* Google Blue */
+            --bg-light: #F4F6F9;
+            --white: #ffffff;
+            --text-dark: #16325C;
+            --text-light: #54698D;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* --- Header Section --- */
+        header {
+            background: var(--white);
+            padding: 4rem 1rem;
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        h1 { font-size: 2.8rem; color: var(--secondary); margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.2rem; color: var(--primary); font-weight: 600; letter-spacing: 1px; }
+
+        .contact-bar {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+        .contact-bar i { color: var(--primary); margin-right: 5px; }
+
+        /* --- Badges --- */
+        .badges-container {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .cert-badge {
+            background: linear-gradient(135deg, var(--primary) 0%, #005FB2 100%);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 10px rgba(0, 161, 224, 0.3);
+            transition: transform 0.2s;
+        }
+
+        .cert-badge.google {
+            background: linear-gradient(135deg, var(--gcp-blue) 0%, #3367D6 100%);
+        }
+
+        .cert-badge:hover { transform: translateY(-2px); }
+
+        /* --- Main Layout --- */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        section {
+            background: var(--white);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        /* --- Skills Grid --- */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        .skill-category h3 { font-size: 1.1rem; color: var(--primary); margin-bottom: 10px; }
+        .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        .tag {
+            background: var(--bg-light);
+            color: var(--secondary);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            border: 1px solid #e0e0e0;
+        }
+
+        /* --- Projects & Experience --- */
+        .item { margin-bottom: 2rem; }
+        .item:last-child { margin-bottom: 0; }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 5px;
+        }
+        
+        .item-title { font-size: 1.2rem; font-weight: 700; }
+        .item-meta { color: var(--text-light); font-size: 0.9rem; font-style: italic; }
+
+        ul.details { list-style-position: inside; color: var(--text-dark); margin-top: 10px; }
+        ul.details li { margin-bottom: 8px; }
+        
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; }
+            .contact-bar { flex-direction: column; gap: 0.5rem; align-items: center; }
+            .badges-container { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Alok Mishra</h1>
+        <div class="subtitle">DATA ARCHITECT • AGENTIC AI SPECIALIST</div>
+        
+        <div class="contact-bar">
+            <span><i class="fas fa-envelope"></i> alok@example.com</span>
+            <span><i class="fab fa-linkedin"></i> linkedin.com/in/alokmishra</span>
+            <span><i class="fab fa-github"></i> github.com/alokmishra</span>
+        </div>
+
+        <div class="badges-container">
+            <div class="cert-badge">
+                <i class="fas fa-robot"></i>
+                <span>Salesforce Certified Agentforce</span>
+            </div>
+            <div class="cert-badge google">
+                <i class="fab fa-google"></i>
+                <span>Google Cloud Generative AI Leader</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <h2>Executive Summary</h2>
+            <p>
+                Innovative Data & AI Architect with specialized expertise in <strong>Agentic AI workflows</strong> and <strong>Cloud Data Engineering</strong>. Proven track record in orchestrating multi-agent systems using Salesforce Agentforce and Python-based LLM frameworks. Passionate about transforming static data in BigQuery and CRM systems into autonomous, actionable intelligence.
+            </p>
+        </section>
+
+        <section>
+            <h2>Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Agentic AI & LLMs</h3>
+                    <div class="tags">
+                        <span class="tag">Salesforce Agentforce</span>
+                        <span class="tag">Reasoning Engines</span>
+                        <span class="tag">LangChain</span>
+                        <span class="tag">RAG Architecture</span>
+                        <span class="tag">Vertex AI</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Engineering</h3>
+                    <div class="tags">
+                        <span class="tag">Python (Pandas/PySpark)</span>
+                        <span class="tag">Google Cloud Platform</span>
+                        <span class="tag">BigQuery</span>
+                        <span class="tag">Dataproc</span>
+                        <span class="tag">AlloyDB</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Development</h3>
+                    <div class="tags">
+                        <span class="tag">Apex</span>
+                        <span class="tag">Apps Script</span>
+                        <span class="tag">Git/GitHub</span>
+                        <span class="tag">API Integration</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Featured Projects</h2>
+            
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Enterprise Agentic Workflow Implementation</span>
+                    <span class="item-meta">Salesforce Agentforce • Apex</span>
+                </div>
+                <ul class="details">
+                    <li>Designed an autonomous service agent capable of executing multi-step reasoning: validating customer entitlement, querying inventory in Data Cloud, and triggering shipments without human oversight.</li>
+                    <li>Reduced case resolution time by 40% by implementing a ReAct pattern (Reason + Act) within the Salesforce ecosystem.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">YouTube Content Analysis & Classification</span>
+                    <span class="item-meta">Python • NLP • BigQuery</span>
+                </div>
+                <ul class="details">
+                    <li>Built a data pipeline to classify YouTube channels by analyzing video metadata and transcripts using NLP techniques.</li>
+                    <li>Utilized Python for data extraction and classification logic, storing structured insights into Google BigQuery for analytics.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">GCP Data Lake Modernization</span>
+                    <span class="item-meta">GCP Dataproc • AlloyDB</span>
+                </div>
+                <ul class="details">
+                    <li>Architected a scalable data lake solution leveraging Dataproc for ETL processing and AlloyDB for high-performance transactional queries.</li>
+                    <li>Optimized VPC networking and connectors to ensure secure, low-latency data flow between microservices.</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Alok Mishra. Hosted on GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
